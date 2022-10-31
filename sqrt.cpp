@@ -12,18 +12,18 @@ void calculaRaizBabilonico(long double num, long double err, long double apr){
         b = num/ak;
         a = ak;
     }
-    cout << " Aproxima��o para a raiz �: " << fixed << setprecision(20) << b << endl;
+    cout << " Aproximação para a raiz é: " << fixed << setprecision(3000) << b << endl;
 }
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
     double num,err,apr;
     err = pow(10,-4);
-    cout << "Digite um n�mero para c�lculo aproximado da raiz: ";
+    cout << "Digite a raiz que deseja calcular: ";
     cin >> num;
-    cout << "Digite uma aproxima��o inicial: ";
+    cout << "Digite uma aproximação inicial: ";
     cin >> apr;
-    cout<< err;
+    //cout<< err;
     calculaRaizBabilonico(num,err,apr);
     return 0;
 }
